@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="some.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header show" id="headerID">
+      <div class="container" style="padding: 0 50px">
+        <img src="logo.png" height="30" width="160" alt="" />
+        <nav>
+          <div class="show-on-mobile">
+            <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="fas fa-times"></i
+              ></a>
+              <a href="#" style="color: #6dbd46">Programs</a>
+              <a href="#">Home</a>
+              <a href="#">Contact</a>
+            </div>
+            <div id="main">
+              <button class="openbtn" id="btn" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="show-on-desktop">
+            <ul>
+              <li><a href="#" style="color: #6dbd46">Programs</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById('mySidebar').style.width = '200px'
+        document.getElementById('main').style.marginLeft = '200px'
+        document.getElementsById('btn').className = 'fas fa-times'
+      }
+
+      function closeNav() {
+        document.getElementById('mySidebar').style.width = '0'
+        document.getElementById('main').style.marginLeft = '0'
+      }
+    </script>
+
+    <script>
+      myID3 = document.getElementById('headerID')
+
+      var myScrollFunc3 = function () {
+        var y = window.scrollY
+        if (y >= 70) {
+          myID3.className = 'header hide3'
+        } else {
+          myID3.className = 'header show3'
+        }
+      }
+
+      window.addEventListener('scroll', myScrollFunc3)
+    </script>
+
+    <div class="app-body">
+      <div class="app-container">
+        <div class="a">
+          <div class="upper">
+            <div class="uppertext">
+              <p>Learn from</p>
+              <p>The Best</p>
+            </div>
+          </div>
+          <div class="lower">
+            <div class="lowertext">
+              <p>for an</p>
+              <p>Even Better You</p>
+            </div>
+          </div>
+        </div>
+        <div class="b">
+          <img src="listing_poster.JPG" width="100%" height="95%" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container programs" style="padding: 50px 0">
+      <div>
+        <div class="first">
+          <img src="Slide1.JPG" />
+          <a href="https://www.planmyfood.com/subscriptions/XJfR/MDKDLfRY2/YdJUG4g==">
+            <button class="posterbutton">
+              <p>Join Now</p>
+            </button>
+          </a>
+        </div>
+        <div class="second">
+          <img src="Slide2.JPG" />
+          <a href="https://www.planmyfood.com/subscriptions/W2JSLXSqwIdBSYmb4r2fKQ==">
+            <button class="posterbutton">
+              <p>Join Now</p>
+            </button>
+          </a>
+        </div>
+        <div class="third">
+          <img src="Slide3.JPG" />
+          <a href="https://www.planmyfood.com/subscriptions/HoPLzRyFGr+xZjiRQRLj8w==">
+            <button class="posterbutton">
+              <p>Join Now</p>
+            </button>
+          </a>
+        </div>
+        <div class="fourth">
+          <img src="Slide4.JPG" />
+          <a href="https://www.planmyfood.com/subscriptions/YRbTQLYqrz/HG+NfPS6bBQ==">
+            <button class="posterbutton">
+              <p>Join Now</p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="footer-content text-center">
+                <div class="footer-logo">
+                  <img
+                    src="https://www.planmyfood.com/assets/frontend/img/logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="privacy">
+                  <a href="https://www.planmyfood.com/privacy">
+                    <p>Privacy Policy |</p>
+                  </a>
+                  <a href="https://www.planmyfood.com/terms">
+                    <p>Terms & Conditions</p>
+                  </a>
+                </div>
+                <div class="copyright">
+                  <p>
+                    ©copyright 2017 MAJA Solutions LLP | All right reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
